@@ -1,51 +1,261 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Terms of Service - AI Bluesky Scheduler</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-        .back { margin-bottom: 20px; }
-        .back a { color: #0066cc; text-decoration: none; }
-        h1, h2 { color: #333; }
-        ul { margin-left: 20px; }
-    </style>
+<meta charset="UTF-8">
+<title>Terms of Service - AI Bluesky Scheduler</title>
+<style>
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    line-height: 1.6;
+    color: #333;
+}
+.back { 
+    margin-bottom: 20px; 
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.back a { 
+    color: #0066cc; 
+    text-decoration: none; 
+    font-weight: 500;
+}
+.back a:hover {
+    text-decoration: underline;
+}
+h1 { 
+    color: #2c3e50; 
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+h2 { 
+    color: #34495e; 
+    font-size: 1.4em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+h3 {
+    color: #34495e;
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+ul { 
+    margin-left: 20px; 
+    margin-bottom: 15px;
+}
+li {
+    margin-bottom: 8px;
+}
+.highlight {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+}
+.warning {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+}
+.info {
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+}
+strong {
+    color: #2c3e50;
+}
+.effective-date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 30px;
+}
+</style>
 </head>
 <body>
-    <div class="back"><a href="index.html">← Back to Home</a></div>
-    <h1>Terms of Service</h1>
-    <p><strong>Effective Date:</strong> June 17, 2025</p>
-    <p> This application is currently provided free of charge.</p>
-    
-    <h2>1. Acceptance of Terms</h2>
-    <p>By installing or using AI Bluesky Scheduler, you agree to these Terms of Service. If you do not agree, you must not use this extension.</p>
-    
-    <h2>2. Development Phase Limitations</h2>
-    <ul>
-        <li>Features may be incomplete, unstable, or subject to change without notice.</li>
-        <li>No warranty or guarantee of service; use at your own risk.</li>
-        <li>Service may be interrupted for updates or maintenance.</li>
-        <li>Data, settings, and scheduled posts may be reset or lost during development.</li>
-    </ul>
-    
-    <h2>3. User Responsibilities</h2>
-    <ul>
-        <li>Use this extension for testing and personal productivity; no commercial use is permitted during development.</li>
-        <li>Maintain valid Bluesky credentials and comply with Bluesky’s terms of service.</li>
-        <li>Safeguard your OpenAI API key and Bluesky credentials; do not share them.</li>
-    </ul>
-    
-    <h2>4. No Warranties</h2>
-    <p>THIS SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
-    
-    <h2>5. Limitation of Liability</h2>
-    <p>IN NO EVENT SHALL THE DEVELOPER OR CONTRIBUTORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES ARISING OUT OF YOUR USE OF OR INABILITY TO USE THIS EXTENSION.</p>
-    
-    <h2>6. Governing Law</h2>
-    <p>These Terms are governed by the laws of your jurisdiction without regard to conflict of law principles.</p>
-    
-    <h2>7. Contact</h2>
-    <p>For questions or feedback regarding these terms, please open an issue at:<br>
-    <a href="https://github.com/you/ai-bluesky-scheduler/issues">GitHub Issues</a></p>
+<div class="back"><a href="index.html">← Back to Home</a></div>
+
+<h1>Terms of Service</h1>
+<p class="effective-date"><strong>Effective Date:</strong> June 18, 2025</p>
+
+<div class="info">
+<p><strong>Free Software:</strong> AI Bluesky Scheduler is provided free of charge. No payment is required for any features.</p>
+</div>
+
+<h2>1. Acceptance of Terms</h2>
+<p>By installing, accessing, or using AI Bluesky Scheduler (the "Extension"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you must not use the Extension.</p>
+
+<h2>2. Description of Service</h2>
+<p>AI Bluesky Scheduler is a browser extension that allows users to:</p>
+<ul>
+<li>Schedule posts for automatic publication to Bluesky</li>
+<li>Generate content using AI assistance (optional, requires OpenAI API key)</li>
+<li>Manage and edit scheduled posts through a calendar interface</li>
+<li>Store scheduling data and preferences locally in your browser</li>
+</ul>
+
+<h2>3. User Responsibilities</h2>
+
+<h3>3.1 Account Requirements</h3>
+<ul>
+<li>You must maintain valid Bluesky account credentials</li>
+<li>You are responsible for the security of your Bluesky login information</li>
+<li>You must comply with Bluesky's Terms of Service and Community Guidelines</li>
+</ul>
+
+<h3>3.2 API Key Management</h3>
+<ul>
+<li>If using AI features, you must provide your own OpenAI API key</li>
+<li>You are responsible for all costs associated with OpenAI API usage</li>
+<li>You must keep your API key secure and not share it with others</li>
+<li>You agree to comply with OpenAI's Terms of Service and Usage Policies</li>
+</ul>
+
+<h3>3.3 Content Responsibility</h3>
+<ul>
+<li>You are solely responsible for all content you schedule or post</li>
+<li>You must not use the Extension to post illegal, harmful, or offensive content</li>
+<li>You must respect intellectual property rights and privacy of others</li>
+<li>You agree not to use the Extension for spam, harassment, or malicious purposes</li>
+</ul>
+
+<h2>4. Acceptable Use</h2>
+
+<h3>4.1 Permitted Uses</h3>
+<ul>
+<li>Personal social media management and content scheduling</li>
+<li>Business social media posting (subject to Bluesky's commercial use policies)</li>
+<li>Educational and research purposes</li>
+</ul>
+
+<h3>4.2 Prohibited Uses</h3>
+<ul>
+<li>Automated spam or mass unsolicited messaging</li>
+<li>Circumventing Bluesky's rate limits or posting restrictions</li>
+<li>Sharing accounts or credentials with unauthorized users</li>
+<li>Reverse engineering, decompiling, or attempting to extract source code</li>
+<li>Modifying, copying, or redistributing the Extension</li>
+<li>Creating derivative works based on the Extension</li>
+<li>Using the Extension for illegal activities or to violate platform policies</li>
+</ul>
+
+<h2>5. Data and Privacy</h2>
+<ul>
+<li>The Extension stores data locally in your browser only</li>
+<li>No personal data is transmitted to our servers</li>
+<li>Your data may be transmitted to Bluesky and OpenAI as necessary for functionality</li>
+<li>You can delete all stored data by clearing the Extension's settings or uninstalling</li>
+<li>See our <a href="privacy.html">Privacy Policy</a> for detailed information</li>
+</ul>
+
+<h2>6. Third-Party Services</h2>
+
+<div class="warning">
+<p><strong>Important:</strong> This Extension integrates with external services (Bluesky, OpenAI) that have their own terms and policies. You must comply with all applicable third-party terms.</p>
+</div>
+
+<h3>6.1 Bluesky Integration</h3>
+<ul>
+<li>Subject to Bluesky's Terms of Service and Community Guidelines</li>
+<li>Bluesky may change their API or policies without notice</li>
+<li>Service interruptions may occur due to Bluesky maintenance or changes</li>
+</ul>
+
+<h3>6.2 OpenAI Integration</h3>
+<ul>
+<li>Subject to OpenAI's Terms of Service and Usage Policies</li>
+<li>API costs are your responsibility</li>
+<li>Content generation subject to OpenAI's content policies</li>
+</ul>
+
+<h2>7. Service Availability</h2>
+<ul>
+<li>The Extension is provided "as is" and "as available"</li>
+<li>We do not guarantee uninterrupted or error-free service</li>
+<li>Scheduled posts may fail due to network issues, API changes, or other factors</li>
+<li>We may update, modify, or discontinue features without notice</li>
+</ul>
+
+<h2>8. No Warranties</h2>
+<p>THE EXTENSION IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+<ul>
+<li>MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE</li>
+<li>NON-INFRINGEMENT OF INTELLECTUAL PROPERTY</li>
+<li>ACCURACY, RELIABILITY, OR AVAILABILITY OF THE SERVICE</li>
+<li>COMPATIBILITY WITH YOUR DEVICES OR OTHER SOFTWARE</li>
+</ul>
+
+<h2>9. Limitation of Liability</h2>
+<p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE DEVELOPERS, CONTRIBUTORS, OR DISTRIBUTORS BE LIABLE FOR:</p>
+<ul>
+<li>INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES</li>
+<li>LOSS OF PROFITS, DATA, USE, OR OTHER INTANGIBLE LOSSES</li>
+<li>DAMAGES ARISING FROM YOUR USE OR INABILITY TO USE THE EXTENSION</li>
+<li>UNAUTHORIZED ACCESS TO OR ALTERATION OF YOUR TRANSMISSIONS OR DATA</li>
+<li>STATEMENTS OR CONDUCT OF ANY THIRD PARTY ON THE SERVICE</li>
+</ul>
+
+<h2>10. Indemnification</h2>
+<p>You agree to indemnify and hold harmless the developers from any claims, damages, or expenses arising from:</p>
+<ul>
+<li>Your use of the Extension</li>
+<li>Your violation of these Terms</li>
+<li>Your violation of any third-party rights</li>
+<li>Content you post or schedule through the Extension</li>
+</ul>
+
+<h2>11. Updates and Modifications</h2>
+<ul>
+<li>We may update the Extension and these Terms at any time</li>
+<li>Continued use constitutes acceptance of updated Terms</li>
+<li>Major changes will be communicated through appropriate channels</li>
+<li>You can review the current Terms at any time</li>
+</ul>
+
+<h2>12. Termination</h2>
+<ul>
+<li>You may stop using the Extension at any time by uninstalling it</li>
+<li>We may discontinue the Extension or deny access without notice</li>
+<li>Upon termination, these Terms remain in effect for applicable provisions</li>
+<li>Data deletion is your responsibility</li>
+</ul>
+
+<h2>13. Intellectual Property</h2>
+<div class="highlight">
+<p>AI Bluesky Scheduler is proprietary software provided free of charge. All rights, title, and interest in the Extension remain with the developers. You receive a limited, non-exclusive, non-transferable license to use the Extension according to these Terms.</p>
+</div>
+
+<h2>14. Governing Law and Disputes</h2>
+<ul>
+<li>These Terms are governed by applicable international and local laws</li>
+<li>Disputes should first be addressed through good faith discussion</li>
+<li>Legal proceedings must be brought in courts of competent jurisdiction</li>
+<li>If any provision is unenforceable, the remainder remains in effect</li>
+</ul>
+
+<h2>15. Contact Information</h2>
+<p>For questions, concerns, or feedback regarding these Terms:</p>
+<ul>
+<li><strong>Support Email:</strong> [your-support-email@domain.com]</li>
+<li><strong>Extension Documentation:</strong> See help section within the extension</li>
+<li><strong>Chrome Web Store:</strong> Leave reviews and feedback on the store page</li>
+</ul>
+
+<div class="info">
+<p><strong>Last Updated:</strong> June 18, 2025<br>
+<strong>Version:</strong> 1.0<br>
+These Terms are effective immediately upon installation or use of the Extension.</p>
+</div>
+
 </body>
 </html>
