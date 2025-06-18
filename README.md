@@ -43,16 +43,43 @@ All data stays on your device. We do **not** send your credentials, API keys, or
 
 ## Use of External Services
 
-### Bluesky (bsky.app)
-- We make authenticated API calls to post your scheduled content and verify your account status
+### Bluesky Services
+**bsky.social & api.bsky.app**
+- **bsky.social**: Used for Bluesky authentication and account verification
+- **api.bsky.app**: Used for posting scheduled content and retrieving account data
+- We make authenticated API calls only when you schedule posts or verify your account
 - Bluesky receives only what you explicitly schedule to post (post text, media) and your authentication credentials
 - Communication occurs only at scheduled posting times or when you manually authenticate
+- Your data is subject to Bluesky's [Privacy Policy](https://bsky.social/about/privacy) and [Terms of Service](https://bsky.social/about/terms)
 
-### OpenAI (api.openai.com)
+### OpenAI Services  
+**api.openai.com**
 - When AI-assisted content generation is enabled and you have provided an API key, your text prompts are sent to OpenAI's API
 - OpenAI may use your prompts and generated content according to their [Privacy Policy](https://openai.com/policies/privacy-policy)
 - We do not log, store, or forward any AI responses beyond displaying them in the extension interface
 - AI features are entirely optional and can be disabled
+- You are responsible for all OpenAI API usage costs
+
+### Data Transmission Summary
+- **To Bluesky**: Authentication credentials, scheduled post content
+- **To OpenAI**: Text prompts for content generation (optional)
+- **To Our Servers**: Nothing - we have no backend servers
+
+---
+
+## Chrome Extension Permissions
+
+AI Bluesky Scheduler requires the following permissions to function:
+
+- **storage**: Store your scheduling data, preferences, and encrypted credentials locally in your browser
+- **alarms**: Schedule and trigger posts at specified dates and times using Chrome's alarm system  
+- **tabs**: Open the full-view calendar interface in a separate browser tab
+- **Host permissions for**:
+  - `https://bsky.social/*` - For Bluesky authentication and account access
+  - `https://api.bsky.app/*` - For Bluesky data operations and posting
+  - `https://api.openai.com/*` - For optional AI content generation (only when API key provided)
+
+These permissions are used solely for the extension's core functionality. No data is collected or transmitted beyond the services explicitly mentioned above.
 
 ---
 
@@ -64,21 +91,6 @@ Bluesky Post Scheduler does **not** use any analytics, telemetry, or tracking se
 - Send crash reports
 - Use cookies or tracking pixels
 - Collect device information beyond what's needed for encryption
-
----
-
-## Chrome Extension Permissions
-
-Bluesky Post Scheduler requires the following permissions to function:
-
-- **storage**: Store your scheduling data, preferences, and encrypted credentials locally in your browser
-- **alarms**: Schedule and trigger posts at specified dates and times using Chrome's alarm system
-- **tabs**: Open the full-view calendar interface in a separate browser tab
-- **Host permissions for**:
-  - `https://bsky.app/*` - For Bluesky authentication and posting
-  - `https://api.openai.com/*` - For optional AI content generation (only when API key provided)
-
-These permissions are used solely for the extension's core functionality. No data is collected or transmitted beyond the services explicitly mentioned above.
 
 ---
 
