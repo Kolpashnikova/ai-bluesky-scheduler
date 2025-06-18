@@ -127,8 +127,7 @@ We may update this privacy policy to reflect changes in our practices or applica
 
 If you have questions or concerns about this privacy policy or our data practices, please contact us:
 
-- **GitHub Issues**: [https://github.com/[your-username]/bluesky-post-scheduler/issues](https://github.com/[your-username]/bluesky-post-scheduler/issues)
-- **Email**: [your-support-email@domain.com]
+- **GitHub Issues**: [https://github.com/Kolpashnikova/ai-bluesky-scheduler/issues](https://github.com/Kolpashnikova/ai-bluesky-scheduler/issues)
 
 ---
 
