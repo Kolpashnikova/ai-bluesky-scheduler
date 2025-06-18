@@ -56,10 +56,10 @@ AI Bluesky Scheduler does **not** use any analytics, telemetry, or tracking serv
 
 ## Permissions
 
-* \`\`: to save your settings and encrypted credentials locally.
-* \`\`: to schedule future posts.
-* \`\`: to open the full-view editor in a new tab.
-* \`\`: to inject UI elements or content scripts if needed.
+* to save your settings and encrypted credentials locally.
+* to schedule future posts.
+* to open the full-view editor in a new tab.
+* to inject UI elements or content scripts if needed.
 * **Host permissions** for `https://api.bsky.app/*` and `https://bsky.social/*` to communicate with Bluesky’s APIs.
 
 ---
