@@ -73,7 +73,6 @@ AI Bluesky Scheduler requires the following permissions to function:
 
 - **storage**: Store your scheduling data, preferences, and encrypted credentials locally in your browser
 - **alarms**: Schedule and trigger posts at specified dates and times using Chrome's alarm system  
-- **tabs**: Open the full-view calendar interface in a separate browser tab
 - **Host permissions for**:
   - `https://bsky.social/*` - For Bluesky authentication and account access
   - `https://api.bsky.app/*` - For Bluesky data operations and posting
